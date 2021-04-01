@@ -3,7 +3,7 @@
 </script>
 
 <main>
-	<h1>Hello world!</h1>
+	<h1>Pattern Library</h1>
 
 	<Counter />
 

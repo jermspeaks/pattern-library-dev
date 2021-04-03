@@ -1,11 +1,25 @@
-<script>
-	import '../app.css';
+<script context="module">
+	export const prerender = true;
 </script>
 
-<nav>
-	<a href=".">Home</a>
-	<a href="about">About</a>
-	<a href="patterns">Patterns</a>
-</nav>
+<script>
+	import Nav from '$lib/Nav.svelte';
+	export let segment;
+</script>
 
-<slot></slot>
+<Nav {segment}/>
+
+<main>
+	<slot></slot>
+</main>
+
+<style>
+	:root {
+		font-family: sans-serif;
+	}
+
+	main {
+		max-width: 40em;
+		margin: 0 auto;
+	}
+</style>

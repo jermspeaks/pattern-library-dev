@@ -15,6 +15,31 @@ module.exports = {
 		// specifying a different adapter
 		// adapter: node(),
 		adapter: netlify(),
+		// amp: false,
+		// appDir: '_app',
+		// files: {
+		// 	assets: 'static',
+		// 	hooks: 'src/hooks',
+		// 	lib: 'src/lib',
+		// 	routes: 'src/routes',
+		// 	serviceWorker: 'src/service-worker',
+		// 	template: 'src/app.html'
+		// },
+		// host: null,
+		// hostHeader: null,
+		// hydrate: true,
+		// paths: {
+		// 	assets: '',
+		// 	base: ''
+		// },
+		// prerender: {
+		// 	crawl: true,
+		// 	enabled: true,
+		// 	force: false,
+		// 	pages: ['*']
+		// },
+		// router: true,
+		// ssr: true,
 
 		// hydrate the <div id="svelte"> element in src/app.html
 		target: '#svelte',

@@ -1,6 +1,26 @@
-<script>
-	import patterns from './patterns.json';
+<script context="module">
+	export const prerender = true;
+
+	export async function load({ fetch }) {
+		const res = await fetch('/patterns.json');
+		return {
+			props: {
+				patterns: await res.json()
+			}
+		};
+	}
 </script>
+
+<script>
+	export let patterns;
+	console.log('patterns', patterns);
+</script>
+
+<svelte:head>
+	<title>Patterns</title>
+</svelte:head>
+
+<h1>blog</h1>
 
 <table class="pattern-table">
 	<tbody
@@ -30,7 +50,7 @@
 						<a href="patterns/{pattern.link}" class="circle">
 							<img class="circle" src={pattern.imageSrc} alt="data visualization" />
 						</a>
-						<p>{pattern.name}</p>
+						<p>{pattern.title}</p>
 					</div>
 				{/each}
 			</td>

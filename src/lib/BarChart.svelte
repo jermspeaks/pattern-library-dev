@@ -1,5 +1,5 @@
 <script>
-	import { scaleLinear } from '../../../vendor/d3-scale';
+	import { scaleLinear } from '../vendor/d3-scale';
 
 	const points = [
 		{ year: 1990, birthrate: 16.7 },

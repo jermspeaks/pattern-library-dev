@@ -3,6 +3,7 @@
 
 	export async function load({ fetch }) {
 		const res = await fetch('/blog.json');
+		console.log('res', res);
 		return {
 			props: {
 				posts: await res.json()
@@ -13,6 +14,7 @@
 
 <script>
 	export let posts;
+	console.log('posts', posts);
 </script>
 
 <svelte:head>

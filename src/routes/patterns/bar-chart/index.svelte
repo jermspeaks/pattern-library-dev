@@ -34,7 +34,7 @@
 </script>
 
 <style>
-	h2 {
+	h1, h2 {
 		text-align: center;
 	}
 
@@ -83,6 +83,8 @@
 		fill: #d11;
 	}
 </style>
+
+<h1>Bar Chart</h1>
 
 <h2>US birthrate by year</h2>
 
